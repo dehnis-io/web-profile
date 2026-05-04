@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Personal - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- <link href="css/docs.css" rel="stylesheet" /> -->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/docs.css" rel="stylesheet" />
+    </head>
+
+    <body class="d-flex flex-column h-100 bg-light">
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-2">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Meet Dennis Mgbah</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
+                        <li class="nav-item"><a class="nav-link"  href="mailto:dennismgbah@gmail.com?subject=DevOps%20/%20SRE%20Opportunity&body=Hi%20there,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20DevOps/SRE%20opportunities.%0D%0A%0D%0ARegards,">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <article class="container article-container">
+
+        <!-- TITLE -->
+        <header class="header">
+            <h1>DevSecOps Platform for a Cloud-Native eCommerce System</h1>
+
+            <p class="subtitle">
+            I designed a fully automated CI/CD and GitOps pipeline using AWS, Kubernetes,
+            and security-first engineering practices.
+            </p>
+
+            <div class="meta">
+            <span>DevSecOps • AWS • Kubernetes • CI/CD</span>
+            </div>
+        </header>
+
+        <!-- HERO CAROUSEL -->
+            <div class="carousel">
+                <div class="slides">
+                    <img src="assets/project-imgs/electro-shop/Electro-shop.jpg" class="slide active" />
+                    <img src="assets/project-imgs/electro-shop/Jenks.jpg" class="slide" />
+                    <img src="assets/project-imgs/electro-shop/argocd.jpg" class="slide" />
+                </div>
+        <button class="prev" onclick="moveSlide(-1)">❮</button>
+        <button class="next" onclick="moveSlide(1)">❯</button>
+        <div class="dots">
+            <span onclick="setSlide(0)"></span>
+            <span onclick="setSlide(1)"></span>
+            <span onclick="setSlide(2)"></span>
+        </div>
+
+        </div>
+
+        <!-- SECTION -->
+        <section>
+            <h2>Overview</h2>
+            <p>
+            The Elcro Shop eCommerce platform was designed and deployed as a 
+            fully automated, cloud-native application leveraging a DevSecOps approach. 
+            The primary objective of this project was to eliminate manual intervention 
+            across infrastructure provisioning, application delivery, and deployment 
+            workflows—achieving a true “push-to-deploy” ecosystem with built-in security, 
+            scalability, and reliability. Rather than focusing solely on application 
+            delivery, this project emphasizes building a resilient, observable, and secure 
+            software delivery pipeline using modern cloud-native and GitOps principles.
+            </p>
+        </section>
+
+        <section>
+            <h2>The Problem</h2>
+            <p>
+            Traditional deployment processes were slow, error-prone, and inconsistent across environments.
+            Manual interventions introduced configuration drift and delayed releases.
+            </p>
+        </section>
+
+        <section>
+            <h2>What We Built</h2>
+            <p>
+            We implemented a complete DevSecOps pipeline that integrates CI/CD automation,
+            security scanning, infrastructure as code, and GitOps-based deployments.
+            </p>
+        </section>
+
+        <section>
+            <h2>Architecture</h2>
+            <p>
+            The system is built on AWS using Amazon EKS for container orchestration.
+            Terraform is used to provision infrastructure, while Jenkins orchestrates the CI/CD pipeline.
+            </p>
+
+            <p>
+            ArgoCD ensures that the Kubernetes cluster always matches the desired state defined in Git.
+            </p>
+        </section>
+
+        <section>
+        <img class="hero-img" src="assets/project-imgs/electro-shop/electro-shop-flow.jpg" alt="architecture"/>
+
+            <h2>CI Pipeline</h2>
+            <p>
+            Every code commit triggers a Jenkins pipeline that performs the following steps:
+            </p>
+
+            <ul>
+            <li>Source code checkout from GitHub</li>
+            <li>Static code analysis using SonarQube</li>
+            <li>Vulnerability scanning using Trivy</li>
+            <li>Docker image build</li>
+            <li>Push image to container registry</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>CD + GitOps</h2>
+            <p>
+            Once the image is built, the deployment pipeline updates Kubernetes manifests
+            and pushes them to a GitOps repository.
+            </p>
+
+            <p>
+            ArgoCD continuously monitors this repository and automatically synchronizes
+            the changes with the EKS cluster.
+            </p>
+        </section>
+
+        <section>
+            <h2>Security (DevSecOps Approach)</h2>
+
+            <p>
+            Security is embedded directly into the pipeline rather than being treated as a separate phase.
+            </p>
+
+            <p>
+            <strong>SonarQube</strong> ensures code quality and detects vulnerabilities early,
+            while <strong>Trivy</strong> scans container images and dependencies for known CVEs.
+            </p>
+
+            <blockquote>
+            Security is not a gate at the end — it is part of every commit.
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>Infrastructure as Code</h2>
+            <p>
+            Terraform is used to define AWS infrastructure, ensuring that environments are reproducible,
+            version-controlled, and consistent across all stages.
+            </p>
+        </section>
+
+        <section>
+            <h2>Containerization</h2>
+            <p>
+            Docker is used to package the application into lightweight, portable containers,
+            ensuring consistency across development, staging, and production environments.
+            </p>
+        </section>
+
+        <section>
+            <h2>Key Outcomes</h2>
+            <ul>
+            <li>Fully automated CI/CD pipeline</li>
+            <li>GitOps-driven deployments using ArgoCD</li>
+            <li>Shift-left security with integrated scanning</li>
+            <li>Scalable Kubernetes architecture on AWS EKS</li>
+            <li>Zero manual deployment dependency</li>
+            </ul>
+        </section>
+
+        </article>
+
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; 2026</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small"  href="mailto:yourname@gmail.com?subject=DevOps%20/%20SRE%20Opportunity&body=Hi%20there,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20DevOps/SRE%20opportunities.%0D%0A%0D%0ARegards,">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

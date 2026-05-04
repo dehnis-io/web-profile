@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title></title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- <link href="css/docs.css" rel="stylesheet" /> -->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/docs.css" rel="stylesheet" />
+    </head>
+
+    <body class="d-flex flex-column h-100 bg-light">
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-2">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Meet Dennis Mgbah</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
+                        <li class="nav-item"><a class="nav-link"  href="mailto:dennismgbah@gmail.com?subject=DevOps%20/%20SRE%20Opportunity&body=Hi%20there,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20DevOps/SRE%20opportunities.%0D%0A%0D%0ARegards,">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <article class="container article-container">
+
+        <!-- TITLE -->
+        <header class="header">
+            <h1>Crypgo DevSecOps with Observability</h1>
+
+            <p class="subtitle">
+                End-to-end CI/CD pipeline with integrated security, Kubernetes deployment,
+                and observability on AWS.
+            </p>
+
+            <div class="meta">
+                <span>AWS • Terraform • Jenkins • Kubernetes • DevSecOps • Monitoring</span>
+            </div>
+        </header>
+
+        <!-- HERO CAROUSEL -->
+        <div class="carousel">
+            <div class="slides">
+                <img src="assets/project-imgs/crypgo/crypgo.jpg" class="slide active" />
+                <img src="assets/project-imgs/crypgo/jenks.jpg" class="slide" />
+                <img src="assets/project-imgs/crypgo/mon1.jpg" class="slide" />
+                <!-- <img src="assets/project-imgs/crypgo/mon2.jpg" class="slide" /> -->
+                <!-- <img src="assets/project-imgs/crypgo/mon3.jpg" class="slide" /> -->
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+            <div class="dots">
+                <span onclick="setSlide(0)"></span>
+                <span onclick="setSlide(1)"></span>
+                <span onclick="setSlide(2)"></span>
+            </div>
+        </div>
+
+        <!-- OVERVIEW -->
+        <section>
+            <h2>Overview</h2>
+            <p>
+                This project demonstrates the design and implementation of a production-grade DevSecOps pipeline
+                for a cloud-native eCommerce application. The system was built to automate the entire
+                software delivery lifecycle — from infrastructure provisioning to deployment and monitoring —
+                using modern cloud-native tools.
+            </p>
+
+            <p>
+                The primary objective was to eliminate manual intervention, enforce security early in the pipeline,
+                and ensure scalability and reliability through Kubernetes and observability tooling.
+            </p>
+        </section>
+
+        <!-- PROBLEM -->
+        <section>
+            <h2>Problem Statement</h2>
+            <p>
+                Traditional deployment workflows often rely on manual steps, leading to inconsistencies across environments,
+                delayed releases, and increased risk of configuration drift. Additionally, security checks are frequently
+                introduced late in the process, making vulnerabilities more costly to resolve.
+            </p>
+        </section>
+
+        <!-- SOLUTION -->
+        <section>
+            <h2>Solution</h2>
+            <p>
+                A fully automated DevSecOps pipeline was implemented to address these challenges. The solution integrates:
+            </p>
+
+            <ul>
+                <li>Infrastructure as Code for environment provisioning</li>
+                <li>Automated CI/CD pipelines for build and deployment</li>
+                <li>Integrated security scanning (DevSecOps)</li>
+                <li>Kubernetes-based container orchestration</li>
+                <li>Monitoring and observability stack</li>
+            </ul>
+        </section>
+
+        <!-- ARCHITECTURE -->
+        <section>
+            <h2>Architecture Overview</h2>
+
+            <p>
+                The platform is built on AWS using Amazon EKS for container orchestration. Terraform provisions
+                the infrastructure, while Jenkins orchestrates CI/CD workflows.
+            </p>
+
+            <ul>
+                <li>Code is pushed to GitHub</li>
+                <li>Jenkins executes CI pipeline (build, test, scan)</li>
+                <li>Docker images are built and stored in a registry</li>
+                <li>Deployment is triggered via pipeline</li>
+                <li>Application is deployed to Kubernetes (EKS)</li>
+                <li>Monitoring tools track system performance</li>
+            </ul>
+        </section>
+
+        <!-- TECH STACK -->
+        <section>
+            <h2>Technology Stack</h2>
+
+            <ul>
+                <li><strong>Cloud:</strong> AWS (EKS, EC2, VPC)</li>
+                <li><strong>Infrastructure:</strong> Terraform</li>
+                <li><strong>CI/CD:</strong> Jenkins</li>
+                <li><strong>Containers:</strong> Docker</li>
+                <li><strong>Orchestration:</strong> Kubernetes (EKS)</li>
+                <li><strong>Security:</strong> SonarQube, Trivy</li>
+                <li><strong>Monitoring:</strong> Prometheus, Grafana</li>
+                <li><strong>Scripting:</strong> Bash</li>
+            </ul>
+        </section>
+
+        <!-- IMPLEMENTATION -->
+        <section>
+            <h2>Implementation Details</h2>
+
+            <h3>Infrastructure as Code</h3>
+            <p>
+                Terraform was used to provision AWS infrastructure, ensuring consistency and repeatability.
+                The setup was modular to support scalability and reuse.
+            </p>
+
+            <h3>CI/CD Pipeline</h3>
+            <p>
+                Jenkins pipelines automate the build and deployment process. Each commit triggers:
+            </p>
+
+            <ul>
+                <li>Code checkout</li>
+                <li>Static analysis via SonarQube</li>
+                <li>Vulnerability scanning via Trivy</li>
+                <li>Docker image build</li>
+                <li>Image push to registry</li>
+            </ul>
+
+            <h3>Deployment</h3>
+            <p>
+                The application is deployed to an Amazon EKS cluster using containerized workloads.
+                The deployment process is fully automated through the pipeline.
+            </p>
+
+            <h3>Security Integration</h3>
+            <p>
+                Security scanning is embedded into the CI pipeline, ensuring vulnerabilities are identified
+                early in the development lifecycle.
+            </p>
+
+            <h3>Monitoring & Observability</h3>
+            <p>
+                Prometheus collects metrics, while Grafana provides dashboards for monitoring system health,
+                performance, and reliability.
+            </p>
+        </section>
+
+        <!-- RESULTS -->
+        <section>
+            <h2>Results & Outcomes</h2>
+
+            <ul>
+                <li>Fully automated end-to-end CI/CD pipeline</li>
+                <li>Reduced manual deployment effort</li>
+                <li>Improved security posture through early scanning</li>
+                <li>Scalable Kubernetes-based architecture</li>
+                <li>Real-time monitoring and observability</li>
+            </ul>
+        </section>
+
+
+        </article>
+
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; 2026</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small"  href="mailto:yourname@gmail.com?subject=DevOps%20/%20SRE%20Opportunity&body=Hi%20there,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20DevOps/SRE%20opportunities.%0D%0A%0D%0ARegards,">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
