@@ -11589,8 +11589,10 @@ html {
   max-width: 40rem;
 }
 .profile .profile-img {
+  /* outline: red solid 1px; */
   height: 80vw;
   max-height: 45rem;
+  object-fit: contain;
   position: absolute;
   bottom: 0;
   left: 50%;
